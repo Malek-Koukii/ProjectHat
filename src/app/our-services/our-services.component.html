@@ -1,0 +1,457 @@
+<app-navbar></app-navbar>
+<div class="container py-5">
+  <div class="services">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card card-service-title mt-3">
+          <div class="card-body">
+            <h5 class="card-title text-white" id="titleServices1">Our</h5>
+            <h5 class="card-title text-white" id="titleServices2">Services</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card service-card text-white" style="margin: 2.5em 0">
+          <div class="img-serv">
+            <img
+              class="card-img-top"
+              style="width: 1.5em"
+              src="assets/imgs/service1.png"
+              alt=""
+            />
+          </div>
+          <div class="card-header d-flex">
+            <i class="bi bi-check-circle-fill"></i>
+            <p id="servTitle1">Web and Mobile Application Development</p>
+          </div>
+          <div class="card-body dev-body">
+            <div
+              class="container-text"
+              [ngClass]="{ opened: isOpened[1] }"
+              (click)="toggleView(1)"
+            >
+              <p class="card-text" id="servDescription1">
+                We create customized applications for web and mobile platforms,
+                using the latest technologies to deliver seamless and intuitive
+                user experiences. Our team of experienced developers works
+                closely with our clients to design and implement tailored
+                applications that meet their specific needs.
+              </p>
+              <div id="moreCard1" [hidden]="isOpened[1]">View more</div>
+              <div
+                style="margin-bottom: -1.5em"
+                id="lessCard1"
+                [hidden]="!isOpened[1]"
+              >
+                View less
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card service-card text-white" style="margin: 2.5em 0">
+          <div class="img-serv">
+            <img
+              class="card-img-top"
+              style="width: 1.5em"
+              src="assets/imgs/service2.png"
+              alt=""
+            />
+          </div>
+          <div class="card-header d-flex">
+            <i class="bi bi-check-circle-fill"></i>
+            <p id="servTitle2">Virtual Reality (VR)</p>
+          </div>
+          <div class="card-body dev-body">
+            <div
+              class="container-text"
+              [ngClass]="{ opened: isOpened[2] }"
+              (click)="toggleView(2)"
+            >
+              <p class="card-text" id="servDescription2">
+                We harness the power of virtual reality to create immersive and
+                captivating experiences. Whether it's for training,
+                entertainment, or product visualization, our expertise in
+                virtual reality allows us to develop realistic applications and
+                virtual environments that push the boundaries of human
+                interaction with technology.
+              </p>
+              <div id="moreCard2" [hidden]="isOpened[2]">View more</div>
+              <div
+                style="margin-bottom: -1.5em"
+                id="lessCard2"
+                [hidden]="!isOpened[2]"
+              >
+                View less
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card service-card text-white" style="margin: 2.5em 0">
+          <div class="img-serv">
+            <img
+              class="card-img-top"
+              style="width: 1.5em"
+              src="assets/imgs/service3.png"
+              alt=""
+            />
+          </div>
+          <div class="card-header d-flex">
+            <i class="bi bi-check-circle-fill"></i>
+            <p id="servTitle3">Custom Software Development</p>
+          </div>
+          <div class="card-body dev-body">
+            <div
+              class="container-text"
+              [ngClass]="{ opened: isOpened[3] }"
+              (click)="toggleView(3)"
+            >
+              <p class="card-text" id="servDescription3">
+                We design and develop customized software to meet the specific
+                needs of our clients. Our tailored approach ensures that each
+                software solution is aligned with the unique requirements and
+                goals of the business, offering increased efficiency, improved
+                productivity, and optimal user experience.
+              </p>
+              <div id="moreCard3" [hidden]="isOpened[3]">View more</div>
+              <div
+                style="margin-bottom: -1.5em"
+                id="lessCard3"
+                [hidden]="!isOpened[3]"
+              >
+                View less
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card service-card text-white" style="margin: 2.5em 0">
+          <div class="img-serv">
+            <img
+              class="card-img-top"
+              style="width: 1.5em"
+              src="assets/imgs/service4.png"
+              alt=""
+            />
+          </div>
+          <div class="card-header d-flex">
+            <i class="bi bi-check-circle-fill"></i>
+            <p id="servTitle4">Software Engineering</p>
+          </div>
+          <div class="card-body dev-body">
+            <div
+              class="container-text"
+              [ngClass]="{ opened: isOpened[4] }"
+              (click)="toggleView(4)"
+            >
+              <p class="card-text" id="servDescription4">
+                We apply software engineering methodologies and practices to
+                design, develop, test, and maintain high-quality software
+                systems. Our team of experienced software engineers implements
+                rigorous standards and processes to ensure the reliability,
+                performance, and scalability of applications and systems.
+              </p>
+              <div id="moreCard4" [hidden]="isOpened[4]">View more</div>
+              <div
+                style="margin-bottom: -1.5em"
+                id="lessCard4"
+                [hidden]="!isOpened[4]"
+              >
+                View less
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card service-card text-white" style="margin: 2.5em 0">
+          <div class="img-serv">
+            <img
+              class="card-img-top"
+              style="width: 1.5em"
+              src="assets/imgs/service5.png"
+              alt=""
+            />
+          </div>
+          <div class="card-header d-flex">
+            <i class="bi bi-check-circle-fill"></i>
+            <p id="servTitle5">Artificial Intelligence (AI)</p>
+          </div>
+          <div class="card-body dev-body">
+            <div
+              class="container-text"
+              [ngClass]="{ opened: isOpened[5] }"
+              (click)="toggleView(5)"
+            >
+              <p class="card-text" id="servDescription5">
+                We harness the latest advancements in artificial intelligence to
+                develop innovative solutions that automate tasks, make
+                data-driven decisions, and enhance business processes. Our
+                expertise in AI encompasses computer vision, natural language
+                processing, machine learning, and other domains to deliver
+                intelligent and adaptive applications.
+              </p>
+              <div id="moreCard5" [hidden]="isOpened[5]">View more</div>
+              <div
+                style="margin-bottom: -1.5em"
+                id="lessCard5"
+                [hidden]="!isOpened[5]"
+              >
+                View less
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card service-card text-white" style="margin: 2.5em 0">
+          <div class="img-serv">
+            <img
+              class="card-img-top"
+              style="width: 1.5em"
+              src="assets/imgs/service6.png"
+              alt=""
+            />
+          </div>
+          <div class="card-header d-flex">
+            <i class="bi bi-check-circle-fill"></i>
+            <p id="servTitle6">
+              Consulting, Maintenance, and Technical Support
+            </p>
+          </div>
+          <div class="card-body dev-body">
+            <div
+              class="container-text"
+              [ngClass]="{ opened: isOpened[6] }"
+              (click)="toggleView(6)"
+            >
+              <p class="card-text" id="servDescription6">
+                We offer consulting services to assist our clients in evaluating
+                their technological needs, developing strategies, and making
+                informed decisions. Additionally, we provide maintenance and
+                technical support for their systems, ensuring their smooth
+                operation, security, and long-term scalability.
+              </p>
+              <div id="moreCard6" [hidden]="isOpened[6]">View more</div>
+              <div
+                style="margin-bottom: -1.5em"
+                id="lessCard6"
+                [hidden]="!isOpened[6]"
+              >
+                View less
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card service-card text-white" style="margin: 2.5em 0">
+          <div class="img-serv">
+            <img
+              class="card-img-top"
+              style="width: 1.5em"
+              src="assets/imgs/service7.png"
+              alt=""
+            />
+          </div>
+          <div class="card-header d-flex">
+            <i class="bi bi-check-circle-fill"></i>
+            <p id="servTitle7">Big Data and Analytics</p>
+          </div>
+          <div class="card-body dev-body">
+            <div
+              class="container-text"
+              [ngClass]="{ opened: isOpened[7] }"
+              (click)="toggleView(7)"
+            >
+              <p class="card-text" id="servDescription7">
+                We help businesses leverage the potential of their data by using
+                advanced analytics techniques to extract valuable insights. Our
+                expertise in big data allows us to collect, store, process, and
+                analyze large volumes of data, offering significant insights for
+                strategic decision-making and improving operational performance.
+              </p>
+              <div id="moreCard7" [hidden]="isOpened[7]">View more</div>
+              <div
+                style="margin-bottom: -1.5em"
+                id="lessCard7"
+                [hidden]="!isOpened[7]"
+              >
+                View less
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card service-card text-white" style="margin: 2.5em 0">
+          <div class="img-serv">
+            <img
+              class="card-img-top"
+              style="width: 1.5em"
+              src="assets/imgs/service8.png"
+              alt=""
+            />
+          </div>
+          <div class="card-header d-flex">
+            <i class="bi bi-check-circle-fill"></i>
+            <p id="servTitle8">Robotic Process Automation</p>
+          </div>
+          <div class="card-body dev-body">
+            <div
+              class="container-text"
+              [ngClass]="{ opened: isOpened[8] }"
+              (click)="toggleView(8)"
+            >
+              <p class="card-text" id="servDescription8">
+                We utilize cutting-edge technologies such as robotics,
+                artificial intelligence, and automation to optimize and enhance
+                business processes. By automating repetitive and manual tasks,
+                we enable companies to gain efficiency, reduce errors, and free
+                up their employees for higher-value tasks.
+              </p>
+              <div id="moreCard8" [hidden]="isOpened[8]">View more</div>
+              <div
+                style="margin-bottom: -1.5em"
+                id="lessCard8"
+                [hidden]="!isOpened[8]"
+              >
+                View less
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card service-card text-white" style="margin: 2.5em 0">
+          <div class="img-serv">
+            <img
+              class="card-img-top"
+              style="width: 1.5em"
+              src="assets/imgs/service9.png"
+              alt=""
+            />
+          </div>
+          <div class="card-header d-flex">
+            <i class="bi bi-check-circle-fill"></i>
+            <p id="servTitle9">Testing and Quality Assurance</p>
+          </div>
+          <div class="card-body dev-body">
+            <div
+              class="container-text"
+              [ngClass]="{ opened: isOpened[9] }"
+              (click)="toggleView(9)"
+            >
+              <p class="card-text" id="servDescription9">
+                We provide comprehensive testing and quality assurance services
+                to ensure the reliability, performance, and security of software
+                and applications. Our rigorous testing approach, including
+                functional testing, performance testing, security testing, and
+                interoperability testing, helps identify and resolve potential
+                issues before deployment.
+              </p>
+              <div id="moreCard9" [hidden]="isOpened[9]">View more</div>
+              <div
+                style="margin-bottom: -1.5em"
+                id="lessCard9"
+                [hidden]="!isOpened[9]"
+              >
+                View less
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card service-card text-white" style="margin: 2.5em 0">
+          <div class="img-serv">
+            <img
+              class="card-img-top"
+              style="width: 1.5em"
+              src="assets/imgs/service10.png"
+              alt=""
+            />
+          </div>
+          <div class="card-header d-flex">
+            <i class="bi bi-check-circle-fill"></i>
+            <p id="servTitle10">Internet of Things (IoT)</p>
+          </div>
+          <div class="card-body dev-body">
+            <div
+              class="container-text"
+              [ngClass]="{ opened: isOpened[10] }"
+              (click)="toggleView(10)"
+            >
+              <p class="card-text" id="servDescription10">
+                We design and develop IoT solutions that connect devices and
+                physical objects across networks, enabling increased data
+                collection and automation. Our IoT expertise encompasses
+                hardware design, software development, network connectivity, and
+                data analytics, offering innovative opportunities in areas such
+                as home automation, connected health, and smart infrastructure
+                management.
+              </p>
+              <div id="moreCard10" [hidden]="isOpened[10]">View more</div>
+              <div
+                style="margin-bottom: -1.5em"
+                id="lessCard10"
+                [hidden]="!isOpened[10]"
+              >
+                View less
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card service-card text-white" style="margin: 2.5em 0">
+          <div class="img-serv">
+            <img
+              class="card-img-top"
+              style="width: 1.5em"
+              src="assets/imgs/service11.png"
+              alt=""
+            />
+          </div>
+          <div class="card-header d-flex">
+            <i class="bi bi-check-circle-fill"></i>
+            <p id="servTitle11">Cybersecurity</p>
+          </div>
+          <div class="card-body dev-body">
+            <div
+              class="container-text"
+              [ngClass]="{ opened: isOpened[11] }"
+              (click)="toggleView(11)"
+            >
+              <p class="card-text" id="servDescription11">
+                We offer cybersecurity services aimed at protecting computer
+                systems, networks, and data against threats and malicious
+                attacks. We implement preventive measures such as risk
+                management, network and application security strengthening, as
+                well as detection and response to security incidents. Our goal
+                is to ensure the confidentiality, integrity, and availability of
+                our clients' sensitive information.
+              </p>
+              <div id="moreCard11" [hidden]="isOpened[11]">View more</div>
+              <div
+                style="margin-bottom: -1.5em"
+                id="lessCard11"
+                [hidden]="!isOpened[11]"
+              >
+                View less
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

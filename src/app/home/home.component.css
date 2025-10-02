@@ -1,0 +1,242 @@
+/* ============== Left Section (Home Tab) ============== */
+.left-section .landing {
+  height: 100%;
+  margin-right: 50px;
+  margin-left: 50px;
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.5) 50%,
+    rgba(53, 51, 205, 0.5) 100%
+  );
+}
+@media (min-width: 1092px) {
+  .landing {
+    display: flex;
+  }
+}
+@media (max-width: 1091px) {
+  .cardText,
+  .cardPhone {
+    width: 100%;
+  }
+}
+@media (max-width: 597px) {
+  .left-section .landing {
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .left-section .phoneImg img {
+    width: 140px !important;
+    height: 225px !important;
+  }
+  .left-section .cardLogo img {
+    width: 55px !important;
+    height: 60px !important;
+  }
+  .left-section .cardLogo .logoHatlone {
+    font-size: 10px !important;
+    letter-spacing: 5px !important;
+  }
+  .left-section .phoneCard {
+    width: 17em !important;
+  }
+}
+.cardPhone {
+  justify-content: center;
+  align-items: center;
+}
+.left-section .phoneCard {
+  background-image: url(../../assets/imgs/line.png);
+  background-color: transparent;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.left-section .phoneImg img {
+  width: 200px;
+  height: 360px;
+}
+.left-section .cardLogo img {
+  width: 100px;
+  height: 100px;
+}
+.left-section .cardLogo .logoHatlone {
+  font-size: 13px;
+  color: black;
+  text-shadow: 0px 1px 0px rgb(0, 234, 255);
+  font-weight: 700;
+  letter-spacing: 8px;
+  margin-left: 10px;
+  font-family: "Orbitron", sans-serif;
+  text-align: center;
+}
+.left-section .phoneCard .footer {
+  text-decoration: none;
+  color: rgba(247, 247, 247, 0.905);
+  font-weight: 500;
+  width: 100%;
+  font-size: 20px;
+  border: none;
+  margin-top: -17px;
+  padding-bottom: 10px;
+}
+.left-section .slogan img {
+  width: 250px;
+  height: 100px;
+  opacity: 0.5;
+}
+.left-section .slogan p {
+  color: rgba(200, 200, 200, 0.924);
+  font-family: "Alegreya Sans SC", sans-serif;
+  font-size: 23px;
+  text-align: center;
+}
+@media (min-width: 880px) {
+  .left-section .slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .left-section .slogan p {
+    margin-top: 1.5em;
+  }
+}
+@media (max-width: 879px) {
+  .left-section .slogan {
+    display: grid;
+    place-items: center;
+  }
+}
+@media (max-width: 597px) {
+  .left-section .slogan img {
+    width: 200px !important;
+  }
+  .left-section .slogan p {
+    color: rgba(234, 234, 234, 0.924) !important;
+    font-size: 20px !important;
+    letter-spacing: 5px;
+  }
+}
+@media (max-width: 1091px) {
+  .left-section .landing ul {
+    display: grid;
+    place-items: center;
+  }
+}
+.left-section li h1 {
+  font-weight: 550;
+  text-transform: uppercase;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+}
+.left-section li .animatedTitle1,
+.left-section li .animatedTitle3 {
+  text-transform: capitalize;
+  font-size: 50px;
+  letter-spacing: 2px;
+  animation: fade-in 3s linear 1;
+}
+.left-section li .animatedTitle2,
+.left-section li .animatedTitle4 {
+  text-transform: capitalize;
+  font-size: 80px;
+  letter-spacing: 2px;
+  animation: fade-in 3s linear 1;
+}
+.left-section li .animatedTitle2,
+.left-section li .animatedTitle3,
+.left-section li .animatedTitle4 {
+  margin-top: -25px;
+}
+@media (max-width: 597px) {
+  .left-section li .animatedTitle1,
+  .left-section li .animatedTitle1,
+  .left-section li .animatedTitle3 {
+    font-size: 1.4em;
+    letter-spacing: 5px;
+  }
+  .left-section li .animatedTitle2,
+  .left-section li .animatedTitle4 {
+    font-size: 1.9em;
+    letter-spacing: 5px;
+  }
+  .left-section li .animatedTitle2,
+  .left-section li .animatedTitle3,
+  .left-section li .animatedTitle4 {
+    margin-top: -5px;
+  }
+  .left-section li .learnButton {
+    font-size: 15px !important;
+    padding: 4px 34px !important;
+    margin: 1em 0 !important;
+  }
+}
+.left-section li .learnButton {
+  background: linear-gradient(
+    90deg,
+    rgba(16, 3, 123, 1) 0%,
+    rgba(16, 3, 123, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  border: none;
+  color: black;
+  font-weight: 500;
+  padding: 10px 40px;
+  border-radius: 25px;
+}
+.left-section li .learnButton:hover {
+  color: white;
+}
+/* ============== Right Section ============== */
+.right-section {
+  background-color: #01132bc4;
+}
+.right-section .titleSection {
+  text-align: center;
+}
+.right-section .titleSection h4 {
+  color: white;
+  margin-top: 0.5em;
+  font-size: 20px;
+}
+.right-section .titleSection p {
+  color: #a8a5a5;
+  margin-top: 20px;
+  font-size: 12px;
+}
+.right-section .contactBtn {
+  margin-bottom: -1.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.right-section .contactBtn img {
+  opacity: 0.7;
+}
+.right-section .contactBtn p {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  top: -46px;
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+}
+.right-section ul {
+  list-style: none;
+  font-size: 12px;
+  color: white;
+}
+.right-section ul li {
+  display: flex;
+  margin-bottom: 2px !important;
+}
+.right-section ul li i {
+  margin-right: 5px;
+  color: purple;
+}

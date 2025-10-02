@@ -1,0 +1,109 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">
+      <div class="row">
+        <div class="col" style="margin-right: -1em">
+          <img
+            class="col"
+            src="assets/imgs/logo.png"
+            style="width: 35px; height: 35px"
+            alt=""
+          />
+        </div>
+        <div class="col logo">Hatlone</div>
+      </div>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="bi bi-list"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="nav ms-auto" id="nav-tab">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <button
+              class="nav-link"
+              routerLink=""
+              [routerLinkActive]="'active'"
+              [routerLinkActiveOptions]="{ exact: true }"
+            >
+              {{ homeLabel }}
+            </button>
+          </li>
+          <li class="nav-item">
+            <button
+              class="nav-link services"
+              routerLink="/services"
+              [routerLinkActive]="'active'"
+            >
+              {{ servicesLabel }}
+            </button>
+          </li>
+          <li class="nav-item" *ngIf="url !== '/'">
+            <button
+              class="nav-link contact"
+              routerLink="/contact"
+              [routerLinkActive]="'active'"
+            >
+              {{ contactLabel }}
+            </button>
+          </li>
+        </ul>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a
+            class="nav-link languages"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="assets/imgs/english.png"
+              id="englishFlag"
+              style="width: 1.2em; margin-right: 0.4em"
+              alt=""
+            />
+            <span style="color: white">{{ englishLabelDropdown }}</span>
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end mx-2"
+            aria-labelledby="languageDropdown"
+          >
+            <li style="display: grid; place-items: center" id="frOption">
+              <a class="dropdown" (click)="switchLanguage('fr')">
+                <img
+                  src="assets/imgs/french.png"
+                  style="width: 1.2em; margin-right: 0.4em"
+                  alt=""
+                />
+                <span>{{ frenchLabel }}</span>
+              </a>
+            </li>
+            <li
+              style="display: grid; place-items: center"
+              id="enOption"
+              class="d-none"
+            >
+              <a class="dropdown" (click)="switchLanguage('en')">
+                <img
+                  src="assets/imgs/english.png"
+                  style="width: 1.2em; margin-right: 0.4em"
+                  alt=""
+                />
+                <span>{{ englishLabel }}</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

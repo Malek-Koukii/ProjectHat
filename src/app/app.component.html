@@ -1,0 +1,8 @@
+<video autoplay loop muted class="background">
+  <source src="assets/vds/background.mp4" type="video/mp4" preload="auto" />
+</video>
+<div *ngIf="loadingService.isSpinner$ | async">
+  <app-spinner></app-spinner>
+</div>
+
+<router-outlet></router-outlet>
